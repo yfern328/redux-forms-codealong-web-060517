@@ -8,9 +8,9 @@ let store = createStore(manageTodo);
 
 export function render(){
   ReactDOM.render(
-    <App store={store} />,
+    <App store={ store } />,
     document.getElementById('root')
   );
 };
 
-store.dispatch({type: '@@INIT'});
+store.dispatch({ type: '@@INIT' });
